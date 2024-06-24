@@ -62,9 +62,6 @@ const CouponForm = () => {
             rules: newRules
         }));
     };
-
-  
-
     const handleSubmit = (e) => {
         e.preventDefault();
         const coupon = {

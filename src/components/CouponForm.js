@@ -63,13 +63,6 @@ const CouponForm = () => {
         }));
     };
 
-    const incrementValue = () => {
-        setFormData((prevData) => ({
-            ...prevData,
-            value: prevData.value + 1
-        }));
-    };
-
     const handleSubmit = (e) => {
         e.preventDefault();
         const coupon = {

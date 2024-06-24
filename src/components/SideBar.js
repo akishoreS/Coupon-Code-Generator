@@ -1,6 +1,7 @@
 import React from 'react';
 import './SideBar.css';
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.png';
+
 const Sidebar = () => {
     return (
         <div className="sidebar">
@@ -9,9 +10,9 @@ const Sidebar = () => {
             </div>
             <nav className="sidebar-nav">
                 <ul>
-                    <li><a href="#">Homepage</a></li>
-                    <li><a href="#">Coupon</a></li>
-                    <li><a href="#">Logout</a></li>
+                    <li><button onClick={() => window.location.href = '/'}>Homepage</button></li>
+                    <li><button onClick={() => window.location.href = '/coupons'}>Coupon</button></li>
+                    <li><button onClick={() => window.location.href = '/logout'}>Logout</button></li>
                 </ul>
             </nav>
         </div>
